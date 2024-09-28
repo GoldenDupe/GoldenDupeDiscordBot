@@ -77,3 +77,6 @@ bin/
 /.gradle/
 /build/
 /.gradle
+.gradle/8.10.1/checksums/md5-checksums.bin
+.gradle/
+gradle/
