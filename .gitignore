@@ -74,3 +74,5 @@ bin/
 !/settings.gradle.kts
 */build/
 */.gradle/
+/.gradle/
+/build/
