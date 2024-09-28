@@ -11,6 +11,7 @@ repositories {
 val jda = "5.1.1";
 
 dependencies {
+    implementation("com.google.code.gson:gson:2.11.0")
     implementation("net.dv8tion:JDA:$jda") {
         // Optionally disable audio natives to reduce jar size by excluding `opus-java`
         exclude(module="opus-java")

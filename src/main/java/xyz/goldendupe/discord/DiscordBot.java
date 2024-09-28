@@ -1,5 +1,6 @@
 package xyz.goldendupe.discord;
 
+import bet.astral.mojang.Mojang;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.channel.concrete.TextChannel;
@@ -8,6 +9,7 @@ import net.dv8tion.jda.api.requests.ErrorResponse;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class DiscordBot {
+    public static final Mojang MOJANG = new Mojang();
     private static final String ID = System.getenv("GOLDENDUPE_DISCORD_ID");
     private final JDA jda;
     private final long communityDiscord;
@@ -39,5 +41,4 @@ public class DiscordBot {
         this.communityDiscord = communityDiscord;
         this.developerDiscord = communityDiscord;
     }
-
 }
