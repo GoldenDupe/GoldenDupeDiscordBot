@@ -6,11 +6,14 @@ group = "bet.astral"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    mavenLocal();
     mavenCentral()
 }
 val jda = "5.1.1";
 
 dependencies {
+    implementation("bet.astral:mojang:1.0.0")
+
     implementation("com.google.code.gson:gson:2.11.0")
     implementation("net.dv8tion:JDA:$jda") {
         // Optionally disable audio natives to reduce jar size by excluding `opus-java`
